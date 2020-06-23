@@ -19,5 +19,11 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)onTap:(id)sender {
+    NSLog(@"Keyboard put away");
+    
+    // self.view.endEditing(YES);
+    [self.view endEditing:YES];
+}
 
 @end
