@@ -59,7 +59,10 @@
                                 <rect key="frame" x="202" y="166" width="157" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="onEdit:" destination="BYZ-38-t0r" eventType="editingChanged" id="FNy-lw-aaF"/>
+                                </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JaL-nM-QtS">
                                 <rect key="frame" x="50" y="327" width="309" height="32"/>
@@ -69,6 +72,9 @@
                                     <segment title="20%"/>
                                     <segment title="22%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onEdit:" destination="BYZ-38-t0r" eventType="valueChanged" id="rN8-2O-26g"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -79,6 +85,12 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="zsF-81-fgh"/>
+                    <connections>
+                        <outlet property="billField" destination="bdj-CB-bTt" id="8Fj-F9-qLH"/>
+                        <outlet property="tipControl" destination="JaL-nM-QtS" id="zxw-U3-PAF"/>
+                        <outlet property="tipLabel" destination="aXC-rD-rDa" id="lHE-N5-VNU"/>
+                        <outlet property="totalLabel" destination="U50-Hr-IFG" id="f1y-9Z-Ypg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="A7e-1B-CdO">
