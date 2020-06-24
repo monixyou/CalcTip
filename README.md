@@ -3,8 +3,8 @@ CalcTip is a tip calculator application for iOS.
 
 Submitted by: Monica Bui
 
-Time spent: **X** hours spent in total
-(Started at 1:45pm 6/23)
+Time spent: **4** hours spent in total
+(Started at 1:45pm 6/23 -> basic functionality 5:45pm 6/23)
 
 ## User Stories
 
@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/E0xpUQSHPF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
