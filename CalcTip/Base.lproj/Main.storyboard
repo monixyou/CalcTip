@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tip-->
+        <!--CalcTip-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -86,7 +86,13 @@
                             <outletCollection property="gestureRecognizers" destination="A7e-1B-CdO" appends="YES" id="Ihx-iJ-zxj"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip" id="zsF-81-fgh"/>
+                    <navigationItem key="navigationItem" title="CalcTip" id="zsF-81-fgh">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="NQy-gE-F8t">
+                            <connections>
+                                <segue destination="OgZ-aP-nYC" kind="push" id="ix0-HD-pa3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="bdj-CB-bTt" id="8Fj-F9-qLH"/>
                         <outlet property="tipControl" destination="JaL-nM-QtS" id="zxw-U3-PAF"/>
@@ -102,6 +108,22 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="920" y="138"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="BR2-8i-MWf">
+            <objects>
+                <viewController id="OgZ-aP-nYC" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nwv-Am-sZk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ca6-ua-AUi"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="zBb-DV-2HI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63E-y6-3rl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gd0-94-Mc9">

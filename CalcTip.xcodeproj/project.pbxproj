@@ -16,6 +16,7 @@
 		143E5DB824A2B383005B3EAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 143E5DB724A2B383005B3EAB /* main.m */; };
 		143E5DC224A2B383005B3EAB /* CalcTipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 143E5DC124A2B383005B3EAB /* CalcTipTests.m */; };
 		143E5DCD24A2B383005B3EAB /* CalcTipUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 143E5DCC24A2B383005B3EAB /* CalcTipUITests.m */; };
+		143E5DDE24A324E2005B3EAB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143E5DDC24A324E2005B3EAB /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		143E5DC824A2B383005B3EAB /* CalcTipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcTipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		143E5DCC24A2B383005B3EAB /* CalcTipUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalcTipUITests.m; sourceTree = "<group>"; };
 		143E5DCE24A2B383005B3EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143E5DDB24A324E2005B3EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/SettingsViewController.h; sourceTree = "<group>"; };
+		143E5DDD24A324E2005B3EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = Base.lproj/SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				143E5DAB24A2B382005B3EAB /* ViewController.h */,
 				143E5DAC24A2B382005B3EAB /* ViewController.m */,
 				143E5DAE24A2B382005B3EAB /* Main.storyboard */,
+				143E5DDA24A324E2005B3EAB /* SettingsViewController.h */,
+				143E5DDC24A324E2005B3EAB /* SettingsViewController.m */,
 				143E5DB124A2B383005B3EAB /* Assets.xcassets */,
 				143E5DB324A2B383005B3EAB /* LaunchScreen.storyboard */,
 				143E5DB624A2B383005B3EAB /* Info.plist */,
@@ -269,6 +274,7 @@
 			files = (
 				143E5DAD24A2B382005B3EAB /* ViewController.m in Sources */,
 				143E5DA724A2B382005B3EAB /* AppDelegate.m in Sources */,
+				143E5DDE24A324E2005B3EAB /* SettingsViewController.m in Sources */,
 				143E5DB824A2B383005B3EAB /* main.m in Sources */,
 				143E5DAA24A2B382005B3EAB /* SceneDelegate.m in Sources */,
 			);
@@ -320,6 +326,22 @@
 				143E5DB424A2B383005B3EAB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		143E5DDA24A324E2005B3EAB /* SettingsViewController.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143E5DDB24A324E2005B3EAB /* Base */,
+			);
+			name = SettingsViewController.h;
+			sourceTree = "<group>";
+		};
+		143E5DDC24A324E2005B3EAB /* SettingsViewController.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143E5DDD24A324E2005B3EAB /* Base */,
+			);
+			name = SettingsViewController.m;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
