@@ -15,8 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 
-
 @end
+
 
 @implementation ViewController
 
@@ -25,14 +25,18 @@
     // Do any additional setup after loading the view.
 }
 
+// Puts the keyboard away with a tap on the screen
 - (IBAction)onTap:(id)sender {
-    NSLog(@"Keyboard put away");
     
     // self.view.endEditing(YES);
     [self.view endEditing:YES];
+    
 }
 
+// When edit -> tip and total are recalculated
+// Connected to both billField and tipControl
 - (IBAction)onEdit:(id)sender {
+    
     double bill = [self.billField.text doubleValue];
     
     NSArray *percentages = @[@(0.15), @(0.2), @(0.22)];
@@ -46,6 +50,8 @@
     
 }
 
+// Editing on billField -> trigger animation
+// Put on pause...
 - (IBAction)onEditingBegin:(id)sender {
     
 //    [UIView animateWithDuration:0.2 animations:^{
@@ -58,6 +64,8 @@
     
 }
 
+// Stop edditing on billField -> reverse animation
+// Put on pause...
 - (IBAction)onEditingEnd:(id)sender {
 //
 //    CGRect newFrame = self.billField.frame;
